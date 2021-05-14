@@ -2,8 +2,19 @@
     cursor: pointer;
 }
 
+.avivo-ap-container {
+    font-family: 'Rubik', sans-serif;
+}
+
+.avivo-ap-model--title {
+    color: #9E9E9E;
+}
+
 @media only screen and (max-device-width: 768px){
     .vivo-card-apartments-image {
+        width: 100%;
+    }
+    .avivo-ap-model {
         width: 100%;
     }
 }
