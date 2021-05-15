@@ -1,20 +1,114 @@
-.avivo-apartment-image:hover {
+
+
+.avivo-ap-model--item {
+    transition: all 0.2s ease-in-out;
+}
+.avivo-ap-model--item:hover {
     cursor: pointer;
+    transform: translate3d(0, -6px, 0)
 }
 
 .avivo-ap-container {
     font-family: 'Rubik', sans-serif;
 }
-
-.avivo-ap-model--title {
-    color: #9E9E9E;
+.avivo-ap-modal.modal-dialog {
+   max-width: 80rem;
 }
 
-@media only screen and (max-device-width: 768px){
+.avivo-ap-counter,
+.modal-ap-counter{
+    font-size: 35px;
+    z-index: 2;
+    position: absolute;
+    color: #8D6E63;
+    font-weight: 900;
+}
+
+.modal-ap-counter {
+    margin-top: .3rem;
+}
+
+.avivo-ap-counter,
+.modal-ap-counter{
+    margin-left: .2rem;
+}
+
+.modal-header,
+.card-title{
+    margin-left: 0.5rem;
+}
+
+
+.modal-title,
+.avivo-ap-model--title {
+    font-size: 18px;
+    color: #BCAAA4;
+}
+
+
+.go-up-btn-container {
+    height: 40px;
+    width: 60px;
+    right: 20px;
+    background: transparent;
+    position: absolute;
+}
+
+.go-up-btn-arrow {
+    position: absolute;
+    background-image: url("../assets/angle-double-up-solid.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 20px;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.go-up-btn-arrow:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.go-back-btn {
+    text-decoration: none;
+    color: gray;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.go-back-btn:hover {
+    color: whitesmoke;
+    transform: scale(2);
+}
+
+@media only screen and (max-device-width: 768px) {
     .vivo-card-apartments-image {
         width: 100%;
     }
+
     .avivo-ap-model {
         width: 100%;
+    }
+
+    .avivo-ap-modal.modal-dialog {
+        top: 10rem;
+    }
+
+    .modal-ap-counter {
+        font-size: 24px;
+        margin-top: .4rem;
+    }
+
+    .modal-title,
+    .avivo-ap-model--title {
+        font-size: 14px;
+    }
+
+    .avivo-ap-counter {
+        font-size: 28px;
+        margin-top: .2rem;
+    }
+
+    .go-up-btn-arrow {
+        display: none;
     }
 }
