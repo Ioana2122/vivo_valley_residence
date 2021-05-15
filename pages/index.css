@@ -11,7 +11,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Serif", sans-serif;
     font-size: 16px;
 }
 
@@ -24,21 +24,81 @@ img {
     height: auto;
 }
 
-.vivo-content {
+.avivo-header {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding:7.4rem 1.15rem 6.6rem;
+    color: #fff;
+    background-color: cadetblue;
+    text-decoration: none;
+    height: 100%;
+    max-height: 500px;
+    min-height: 380px;
+    z-index: 1;
+}
+
+.avivo-header:before {
+    background: 50% 50% / cover;
+}
+
+.avivo-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-image: url(../assets/residence/background-3.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    z-index: -1;
+}
+
+.avivo-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.2)),to(rgba(0,0,0,0.2))),-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.2)),to(transparent));
+    background: linear-gradient(
+            180deg
+            ,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%),linear-gradient(
+            180deg
+            ,rgba(0,0,0,0.2) 0%,transparent 100%);
+    z-index: 0;
+}
+
+.avivo-header-content {
+    z-index: 1;
+}
+
+.avivo-header-content-title {
+    font-size: 4rem!important;
+}
+
+.avivo-content {
     margin-top: 3rem;
 }
 
-.vivo-description {
+.avivo-description {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 5rem;
 }
 
-.vivo-cards {
+.avivo-cards {
     display: flex;
     flex-direction: row;
 }
-.vivo-card-apartments {
+.avivo-card-apartments {
     max-width: 29rem;
     max-height: 34rem;
     margin: 2rem 1.5rem 0;
@@ -46,16 +106,17 @@ img {
     cursor: pointer;
 }
 
-.vivo-card-apartments:hover {
+.avivo-card-apartments:hover {
     transform: translate3d(0, -2px, 0)
 }
 
-.vivo-footer {
+.avivo-footer {
     margin-top: 10rem;
 }
 
 @media only screen and (max-device-width: 768px){
-    .vivo-cards {
+    .avivo-cards {
         flex-direction: column;
+        align-items: center;
     }
 }
