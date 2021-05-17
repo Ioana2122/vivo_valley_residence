@@ -12,7 +12,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Serif", sans-serif;
     font-size: 16px;
 }
 
@@ -25,38 +25,220 @@ img {
     height: auto;
 }
 
-.vivo-content {
+body {
+    /*background-color: #EDC9AF!important;*/
+}
+
+.avivo-header {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding:7.4rem 1.15rem 6.6rem;
+    color: #fff;
+    background-color: cadetblue;
+    text-decoration: none;
+    height: 100%;
+    max-height: 500px;
+    min-height: 380px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 13px 11px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 11px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 11px -6px rgba(0,0,0,0.75);
+}
+
+.avivo-header:before {
+    background: 50% 50% / cover;
+}
+
+.avivo-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-image: url(../assets/residence/background-3.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    z-index: -1;
+}
+
+.avivo-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.2)),to(rgba(0,0,0,0.2))),-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.2)),to(transparent));
+    background: linear-gradient(
+            180deg
+            ,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.3) 100%),linear-gradient(
+            360deg
+            ,rgba(0,0,0,0.5) 0%,transparent 100%);
+    z-index: 0;
+}
+
+.avivo-header-content {
+    z-index: 1;
+}
+
+.avivo-header-content-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avivo-header-content-title-first {
+    font-size: 3.5rem!important;
+    color: coral;
+    font-weight: 800;
+}
+
+.avivo-header-content-title-second {
+    font-size: 3rem!important;
+    color: blanchedalmond;
+}
+
+.avivo-content {
     margin-top: 3rem;
 }
 
-.vivo-description {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 5rem;
+.avivo-header-contact {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 1;
 }
 
-.vivo-cards {
+.add-sticky {
+    position: fixed;
+    top: 12px;
+    height: fit-content;
+}
+
+.wrapper {
+    perspective: 1000px;
+    z-index: 4;
+}
+
+.box-area {
+    position: relative;
+    height: 44px;
+    width: 212px;
+    transform-style: preserve-3d;
+    transition: transform 300ms cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transform: translateZ(-60px);
+}
+
+.box-area:hover {
+    transform: rotateX(-90deg) translateY(60px);
+    cursor: pointer;
+}
+
+.box {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.side-one {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    transform: translateZ(60px);
+    background-color: #726e6a63;
+    background-image: linear-gradient(315deg, #726e6a63 18%, #ab9d8d 80%);
+}
+
+.side-two {
+    color: #fff;
+    background-color: #262626;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transform: rotateX(90deg) translateZ(60px);
+}
+
+.avivo-description {
+    text-align: center;
+    font-size: 15px;
+    margin: 5rem 0;
+}
+
+.avivo-cards {
     display: flex;
     flex-direction: row;
+    background: url(../assets/residence/background-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-.vivo-card-apartments {
+.avivo-card-apartments {
     max-width: 29rem;
-    max-height: 34rem;
-    margin: 2rem 1.5rem 0;
+    max-height: 40rem;
+    margin: 5rem 1.5rem;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.vivo-card-apartments:hover {
+.avivo-card-apartments:hover {
     transform: translate3d(0, -2px, 0)
 }
 
-.vivo-footer {
+.avivo-footer {
     margin-top: 10rem;
 }
 
 @media only screen and (max-device-width: 768px){
-    .vivo-cards {
+
+    .avivo-header {
+        max-height: 300px;
+    }
+
+    .avivo-header-content-title-first {
+        font-size: 3rem!important;
+    }
+
+    .avivo-header-content-title-second {
+        font-size: 2.5rem!important;
+    }
+
+    .avivo-header-contact {
+        right: auto;
+    }
+
+    .avivo-cards {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .avivo-card-apartments {
+        margin: 3rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .avivo-header-content-title-first {
+        font-size: 2.5rem!important;
+    }
+
+    .avivo-header-content-title-second {
+        font-size: 2rem!important;
+    }
+
+    .avivo-card-apartments {
+        margin: 2rem 1.5rem;
     }
 }

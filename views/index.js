@@ -14,6 +14,19 @@ document.querySelector("#three-room-app").addEventListener("click", ()=> {
 var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', function () {
-    myInput.focus()
+// myModal.addEventListener('shown.bs.modal', function () {
+//     myInput.focus()
+// })
+
+//Make contact button sticky at scroll when it passes header
+window.addEventListener('scroll', () => {
+    let distanceFromTop = $(window).scrollTop();
+    let headerHeight = $(".avivo-header").outerHeight();
+    const contactBtn = document.querySelector(".avivo-header-contact");
+    if (distanceFromTop > headerHeight) {
+        contactBtn.classList.add("add-sticky");
+    }
+    if (distanceFromTop < headerHeight) {
+        contactBtn.classList.remove("add-sticky");
+    }
 })
