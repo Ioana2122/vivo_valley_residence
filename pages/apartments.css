@@ -1,21 +1,21 @@
 
 
-.avivo-ap-model--item {
+.vivo-ap-model--item {
     transition: all 0.2s ease-in-out;
 }
-.avivo-ap-model--item:hover {
+.vivo-ap-model--item:hover {
     cursor: pointer;
     transform: translate3d(0, -6px, 0)
 }
 
-.avivo-ap-container {
+.vivo-ap-container {
     font-family: 'Rubik', sans-serif;
 }
-.avivo-ap-modal.modal-dialog {
+.vivo-ap-modal.modal-dialog {
    max-width: 80rem;
 }
 
-.avivo-ap-counter,
+.vivo-ap-counter,
 .modal-ap-counter{
     font-size: 35px;
     z-index: 2;
@@ -28,19 +28,23 @@
     margin-top: .3rem;
 }
 
-.avivo-ap-counter,
+.vivo-ap-counter,
 .modal-ap-counter{
     margin-left: .2rem;
 }
 
 .modal-header,
-.card-title{
+.card-title {
     margin-left: 0.5rem;
+}
+
+.vivo-ap-model--item .card-title {
+    margin-bottom: .9rem;
 }
 
 
 .modal-title,
-.avivo-ap-model--title {
+.vivo-ap-model--title {
     font-size: 18px;
     color: #BCAAA4;
 }
@@ -85,11 +89,11 @@
         width: 100%;
     }
 
-    .avivo-ap-model {
+    .vivo-ap-model {
         width: 100%;
     }
 
-    .avivo-ap-modal.modal-dialog {
+    .vivo-ap-modal.modal-dialog {
         top: 10rem;
     }
 
@@ -99,16 +103,20 @@
     }
 
     .modal-title,
-    .avivo-ap-model--title {
+    .vivo-ap-model--title {
         font-size: 14px;
     }
 
-    .avivo-ap-counter {
+    .vivo-ap-counter {
         font-size: 28px;
         margin-top: .2rem;
     }
 
     .go-up-btn-arrow {
         display: none;
+    }
+
+    .vivo-ap-model--item .card-title {
+        margin-bottom: .5rem;
     }
 }

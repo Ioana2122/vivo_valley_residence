@@ -1,22 +1,18 @@
 
 document.querySelector("#one-room-app").addEventListener("click", ()=> {
-    window.location.href = '../pages/apartmentOne.html'
+    window.location.href = '../pages/apartments-two-rooms.html'
+    sessionStorage.setItem('pageId', 'apartments-two-rooms')
 })
-
 document.querySelector("#two-room-app").addEventListener("click", ()=> {
-    window.location.href = '../pages/apartmentTwo.html'
+    window.location.href = '../pages/apartments-three-rooms.html'
+    sessionStorage.setItem('pageId', 'apartments-three-rooms')
+
 })
 
 document.querySelector("#three-room-app").addEventListener("click", ()=> {
-    window.location.href = '../pages/apartmentThree.html'
+    window.location.href = '../pages/apartments-four-rooms.html'
+    sessionStorage.setItem('pageId', 'apartments-four-rooms')
 })
-
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-
-// myModal.addEventListener('shown.bs.modal', function () {
-//     myInput.focus()
-// })
 
 //Make contact button sticky at scroll when it passes header
 window.addEventListener('scroll', () => {
