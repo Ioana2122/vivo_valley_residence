@@ -25,10 +25,6 @@ img {
     height: auto;
 }
 
-body {
-    /*background-color: #EDC9AF!important;*/
-}
-
 .avivo-header {
     position: relative;
     display: -webkit-box;
@@ -96,13 +92,13 @@ body {
 
 .avivo-header-content-title-first {
     font-size: 3.5rem!important;
-    color: coral;
+    color: #ffae44;
     font-weight: 800;
 }
 
 .avivo-header-content-title-second {
     font-size: 3rem!important;
-    color: blanchedalmond;
+    color: #fff0da;
 }
 
 .avivo-content {
@@ -184,6 +180,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin: 10rem 0;
 }
 .avivo-card-apartments {
     max-width: 29rem;
