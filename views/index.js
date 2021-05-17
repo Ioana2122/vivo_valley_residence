@@ -30,3 +30,8 @@ window.addEventListener('scroll', () => {
         contactBtn.classList.remove("add-sticky");
     }
 })
+
+// var myCarousel = document.querySelector('#carouselExampleIndicators');
+// var carousel = new bootstrap.Carousel(myCarousel);
+//
+// carousel();
