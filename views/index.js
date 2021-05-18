@@ -17,8 +17,8 @@ document.querySelector("#three-room-app").addEventListener("click", ()=> {
 //Make contact button sticky at scroll when it passes header
 window.addEventListener('scroll', () => {
     let distanceFromTop = $(window).scrollTop();
-    let headerHeight = $(".avivo-header").outerHeight();
-    const contactBtn = document.querySelector(".avivo-header-contact");
+    let headerHeight = $(".vivo-header").outerHeight();
+    const contactBtn = document.querySelector(".vivo-header-contact");
     if (distanceFromTop > headerHeight) {
         contactBtn.classList.add("add-sticky");
     }
@@ -26,8 +26,3 @@ window.addEventListener('scroll', () => {
         contactBtn.classList.remove("add-sticky");
     }
 })
-
-// var myCarousel = document.querySelector('#carouselExampleIndicators');
-// var carousel = new bootstrap.Carousel(myCarousel);
-//
-// carousel();
