@@ -92,7 +92,6 @@ const apartments3Rooms = [
     }
 ];
 
-
 const apartments4Rooms = [
     {
         apartmentNumber: "24",
@@ -127,7 +126,6 @@ let displayModels = (array, element) => {
 }
 
 //display modal details
-
 const displayModalDetails = (array) => {
     array.forEach((item, index) => {
         item.addEventListener('click', () => {
@@ -140,7 +138,6 @@ const displayModalDetails = (array) => {
         })
     })
 }
-
 
 const handleGoUpArrow = () => {
     document.querySelector('.go-up-btn-arrow').addEventListener('click', () => {
@@ -168,13 +165,3 @@ if(sessionStorage.getItem('pageId') === 'apartments-four-rooms') {
 
 displayModalDetails(document.querySelectorAll('.vivo-ap-model--item'));
 handleGoUpArrow();
-
-//toggle collapsed container
-document.querySelector('.navbar-toggler').addEventListener("click", () => {
-    let collapsedNav = document.querySelector('.collapse');
-     if(collapsedNav.classList.contains('show')) {
-         collapsedNav.classList.remove('show');
-     } else {
-         collapsedNav.classList.add('show');
-     }
-})
