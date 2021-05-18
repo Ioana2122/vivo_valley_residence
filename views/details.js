@@ -118,7 +118,7 @@ let displayModels = (array, element) => {
                     <picture  class="img-thumbnail vivo-ap-picture">
                         <source media="(min-width:650px)" srcset="${apartment.imageUrl}">
                         <source media="(min-width:465px)" srcset="${apartment.imageUrl}">
-                        <img src="${apartment.imageUrl}" alt="Apartament ${apartment.apartmentNumber}" class="shadow-lg">
+                        <img src="${apartment.imageUrl}" alt="Apartament ${apartment.apartmentNumber}" class="shadow-lg lazyload">
                     </picture>
                 </div>
             </div> 
@@ -169,3 +169,14 @@ if(sessionStorage.getItem('pageId') === 'apartments-four-rooms') {
 displayModalDetails(document.querySelectorAll('.vivo-ap-model--item'));
 handleGoUpArrow();
 
+window.addEventListener('scroll', () => {
+    let distanceFromTop = $(window).scrollTop();
+    let headerHeight = $(".vivo-header").outerHeight();
+    const contactBtn = document.querySelector(".vivo-header-contact");
+    if (distanceFromTop > headerHeight) {
+        contactBtn.classList.add("add-sticky");
+    }
+    if (distanceFromTop < headerHeight) {
+        contactBtn.classList.remove("add-sticky");
+    }
+})
