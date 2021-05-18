@@ -14,15 +14,12 @@ document.querySelector("#three-room-app").addEventListener("click", ()=> {
     sessionStorage.setItem('pageId', 'apartments-four-rooms')
 })
 
-//Make contact button sticky at scroll when it passes header
-window.addEventListener('scroll', () => {
-    let distanceFromTop = $(window).scrollTop();
-    let headerHeight = $(".vivo-header").outerHeight();
-    const contactBtn = document.querySelector(".vivo-header-contact");
-    if (distanceFromTop > headerHeight) {
-        contactBtn.classList.add("add-sticky");
-    }
-    if (distanceFromTop < headerHeight) {
-        contactBtn.classList.remove("add-sticky");
+//toggle collapsed container
+document.querySelector('.navbar-toggler').addEventListener("click", () => {
+    let collapsedNav = document.querySelector('.collapse');
+    if(collapsedNav.classList.contains('show')) {
+        collapsedNav.classList.remove('show');
+    } else {
+        collapsedNav.classList.add('show');
     }
 })
