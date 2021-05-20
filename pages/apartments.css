@@ -8,9 +8,11 @@
     transform: translate3d(0, -6px, 0)
 }
 
-.vivo-ap-container {
+.vivo-ap-container.container {
     font-family: 'Rubik', sans-serif;
+    margin-top: 2rem;
 }
+
 .vivo-ap-modal.modal-dialog {
    max-width: 80rem;
 }
@@ -84,6 +86,20 @@
     transform: scale(2);
 }
 
+.vivo-ap-model--item .card-body {
+    -webkit-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.54);
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.54);
+    border-radius: .2rem;
+}
+
+.vivo-ap-status {
+    position:absolute;
+    margin-left: 5rem;
+    margin-top: .4rem;
+    color: #ffae44;
+}
+
 @media only screen and (max-device-width: 768px) {
     .vivo-card-apartments-image {
         width: 100%;
@@ -115,8 +131,15 @@
     .go-up-btn-arrow {
         display: none;
     }
-
+    .vivo-ap-model .col{
+        padding-right: 0;
+        padding-left: 0;
+    }
     .vivo-ap-model--item .card-title {
         margin-bottom: .5rem;
+    }
+
+    .vivo-ap-model--item .card-body {
+        padding: 0;
     }
 }
