@@ -62,7 +62,7 @@
 
 .go-up-btn-arrow {
     position: absolute;
-    background-image: url("../assets/angle-double-up-solid.svg");
+    background-image: url("/angle-double-up-solid.svg");
     background-repeat: no-repeat;
     z-index: 1;
     width: 20px;
