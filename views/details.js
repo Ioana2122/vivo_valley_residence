@@ -1,52 +1,52 @@
 const apartments2Rooms = [
     {
         apartmentNumber: "3",
-        imageUrl: "../assets/2rooms/ap3.jpg",
+        imageUrl: "/2rooms/ap3.jpg",
         sold: false
     },
     {
         apartmentNumber: "4",
-        imageUrl: "../assets/2rooms/ap4.jpg",
+        imageUrl: "/2rooms/ap4.jpg",
         sold: false
     },
     {
         apartmentNumber: "5",
-        imageUrl: "../assets/2rooms/ap5.jpg",
+        imageUrl: "/2rooms/ap5.jpg",
         sold: false
     },
     {
         apartmentNumber: "6",
-        imageUrl: "../assets/2rooms/ap6.jpg",
+        imageUrl: "/2rooms/ap6.jpg",
         sold: false
     },
     {
         apartmentNumber: "10",
-        imageUrl: "../assets/2rooms/ap10.jpg",
+        imageUrl: "/2rooms/ap10.jpg",
         sold: false
     },
     {
         apartmentNumber: "11",
-        imageUrl: "../assets/2rooms/ap11.jpg",
+        imageUrl: "/2rooms/ap11.jpg",
         sold: false
     },
     {
         apartmentNumber: "15",
-        imageUrl: "../assets/2rooms/ap15.jpg",
+        imageUrl: "/2rooms/ap15.jpg",
         sold: false
     },
     {
         apartmentNumber: "16",
-        imageUrl: "../assets/2rooms/ap16.jpg",
+        imageUrl: "/2rooms/ap16.jpg",
         sold: false
     },
     {
         apartmentNumber: "20",
-        imageUrl: "../assets/2rooms/ap20.jpg",
+        imageUrl: "/2rooms/ap20.jpg",
         sold: false
     },
     {
         apartmentNumber: "21",
-        imageUrl: "../assets/2rooms/ap21.jpg",
+        imageUrl: "/2rooms/ap21.jpg",
         sold: false
     }
 ];
@@ -54,62 +54,62 @@ const apartments2Rooms = [
 const apartments3Rooms = [
     {
         apartmentNumber: "2",
-        imageUrl: "../assets/3rooms/ap2.jpg",
+        imageUrl: "/3rooms/ap2.jpg",
         sold: false
     },
     {
         apartmentNumber: "7",
-        imageUrl: "../assets/3rooms/ap7.jpg",
+        imageUrl: "/3rooms/ap7.jpg",
         sold: false
     },
     {
         apartmentNumber: "8",
-        imageUrl: "../assets/3rooms/ap8.jpg",
+        imageUrl: "/3rooms/ap8.jpg",
         sold: false
     },
     {
         apartmentNumber: "9",
-        imageUrl: "../assets/3rooms/ap12.jpg",
+        imageUrl: "/3rooms/ap12.jpg",
         sold: false
     },
     {
         apartmentNumber: "12",
-        imageUrl: "../assets/3rooms/ap12.jpg",
+        imageUrl: "/3rooms/ap12.jpg",
         sold: false
     },
     {
         apartmentNumber: "13",
-        imageUrl: "../assets/3rooms/ap13.jpg",
+        imageUrl: "/3rooms/ap13.jpg",
         sold: false
     },
     {
         apartmentNumber: "14",
-        imageUrl: "../assets/3rooms/ap14.jpg",
+        imageUrl: "/3rooms/ap14.jpg",
         sold: false
     },
     {
         apartmentNumber: "17",
-        imageUrl: "../assets/3rooms/ap17.jpg",
+        imageUrl: "/3rooms/ap17.jpg",
         sold: false
     },
     {
         apartmentNumber: "18",
-        imageUrl: "../assets/3rooms/ap18.jpg",
+        imageUrl: "/3rooms/ap18.jpg",
         sold: false
     },
     {
         apartmentNumber: "19",
-        imageUrl: "../assets/3rooms/ap19.jpg",
+        imageUrl: "/3rooms/ap19.jpg",
         sold: false
     },
     {
         apartmentNumber: "22",
-        imageUrl: "../assets/3rooms/ap22.jpg",
+        imageUrl: "/3rooms/ap22.jpg",
         sold: false
     },
     {
         apartmentNumber: "23",
-        imageUrl: "../assets/3rooms/ap23.jpg",
+        imageUrl: "/3rooms/ap23.jpg",
         sold: false
     }
 ];
@@ -117,12 +117,12 @@ const apartments3Rooms = [
 const apartments4Rooms = [
     {
         apartmentNumber: "24",
-        imageUrl: "../assets/4rooms/ap24.jpg",
+        imageUrl: "/4rooms/ap24.jpg",
         sold: false
     },
     {
         apartmentNumber: "25",
-        imageUrl: "../assets/4rooms/ap25.jpg",
+        imageUrl: "/4rooms/ap25.jpg",
         sold: false
     }
 ];

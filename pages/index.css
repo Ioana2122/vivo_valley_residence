@@ -58,7 +58,7 @@ img {
     right: 0;
     bottom: 0;
     display: block;
-    background-image: url(assets/residence/background-3.jpg);
+    background-image: url(/residence/background-3.jpg);
     background-size: cover;
     transform-origin: center center 0;
     z-index: -1;
@@ -210,7 +210,7 @@ img {
 .vivo-cards {
     display: flex;
     flex-direction: row;
-    background: url(assets/residence/background-1.jpg) no-repeat center center fixed;
+    background: url(/residence/background-1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

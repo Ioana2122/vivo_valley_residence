@@ -1,16 +1,16 @@
 const handleEventListeners = {
     handlePagesRedirect: function () {
         document.querySelector("#one-room-app").addEventListener("click", () => {
-            window.location.href = '../pages/apartments-two-rooms.html'
+            window.location.href = '/apartments-two-rooms.html'
             sessionStorage.setItem('pageId', 'apartments-two-rooms')
         });
         document.querySelector("#two-room-app").addEventListener("click", () => {
-            window.location.href = '../pages/apartments-three-rooms.html'
+            window.location.href = '/apartments-three-rooms.html'
             sessionStorage.setItem('pageId', 'apartments-three-rooms')
 
         });
         document.querySelector("#three-room-app").addEventListener("click", () => {
-            window.location.href = '../pages/apartments-four-rooms.html'
+            window.location.href = '/apartments-four-rooms.html'
             sessionStorage.setItem('pageId', 'apartments-four-rooms')
         });
     }
