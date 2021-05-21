@@ -259,6 +259,10 @@ const init = () => {
 }
 
 window.addEventListener('resize', () => {
-    init();
+    if (window.screen.width <= 768 && !document.querySelectorAll('.mobile-vivo-ap-model--item').length ||
+        window.screen.width > 768 && !document.querySelectorAll('.desktop-vivo-ap-model--item').length)
+        {
+            init();
+        }
 })
 
