@@ -23,6 +23,8 @@ app.use(
 app.use(express.json());
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "pages", "index.html"));
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('okay');
 });
 
 app.listen(PORT, () => {
